@@ -6,7 +6,7 @@ const postRoutes = require('./postController')
 const cors = require('cors')
 
 app.use(cors({
-    origin:"http://localhost:3002",
+    origin:["http://localhost:3002"," https://selva2110.github.io"," https://socialsphere-server.onrender.com/api/posts/"],
     methods:["GET","POST","DELETE"]
 })
 )
